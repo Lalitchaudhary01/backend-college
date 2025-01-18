@@ -1,7 +1,9 @@
+const { StatusCodes } = require("http-status-codes");
+
 const info = (req, res) => {
-  return res.json({
+  return res.status(StatusCodes.OK).json({
     success: true,
-    msg: "Api is live",
+    message: "Api is live",
     error: {},
     data: {},
   });
